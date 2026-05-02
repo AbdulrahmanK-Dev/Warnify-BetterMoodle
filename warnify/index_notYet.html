@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <title>Warnify</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .hero {
+            background-color: #f8f9fa;
+        }
+
+        .hero img {
+            max-height: 350px;
+            object-fit: cover;
+        }
+
+        .feature-img {
+            max-height: 320px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+  <div class="container">
+    <img src="images/Warnify logo.png" style="height: 85px; width: 90px;" alt="logo">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Learn more</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-4">
+
+      <!-- TEXT -->
+      <div class="col-lg-6">
+        <h1 class="fw-bold display-5 mb-3">
+          Skip your classes with intent.
+        </h1>
+
+        <p class="lead text-muted mb-4">
+          Track your attendance. Manage your courses.
+          Know when you're behind and how to recover.
+        </p>
+
+        <div class="d-flex gap-3">
+          <a href="signup.html" class="btn btn-success btn-lg">Sign up</a>
+          <a href="#" class="btn btn-outline-success btn-lg">Login</a>
+        </div>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 text-center">
+        <img src="images/Misaki-Nakahara.Welcome-to-the-NHK.webp"
+             class="img-fluid rounded-3 shadow w-100"
+             alt="hero image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-5">
+  <div class="container">
+
+    <!-- Feature 1 -->
+    <div class="row align-items-center g-4 mb-5">
+      <div class="col-lg-6">
+        <img src="images/1718148745-waihi-college-japan-kimono.avif"
+             class="img-fluid rounded-3 shadow w-100 feature-img">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Everything you need in one place</h2>
+        <p class="text-muted mb-3">
+          Stop juggling multiple tools. Focus on what actually matters.
+        </p>
+
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class=""></i>Attendance tracking</li>
+          <li class="mb-2"><i class=""></i>Relevant AAST resources</li>
+          <li class="mb-2"><i class=""></i>Progress monitoring</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="row align-items-center g-4 flex-lg-row-reverse">
+      <div class="col-lg-6">
+        <img src="images/Universities-Have-Three-Semesters-a-Year.webp"
+             class="img-fluid rounded-3 shadow w-100 feature-img">
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Falling behind is optional</h2>
+        <p class="text-muted mb-4">
+          Stay in control of your academic progress and recover quickly when needed.
+        </p>
+
+        <a href="#" class="btn btn-outline-success">
+          Learn more →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

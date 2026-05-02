@@ -1,0 +1,165 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Dashboard</title>
+    <link rel="stylesheet" href ="styles.css">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+     <?php
+      
+     session_start();
+
+     $name = $_SESSION['fName'] ?? "Guest";
+
+     echo    '<h1>Hello! '.$name.   '</h1> ';
+     ?>
+        
+     
+    </header>
+
+   
+    <section id="calendar" class="container">
+        <h2>Calendar</h2>
+        <p>[Interactive calendar will go here later]</p>
+    </section>
+
+
+    
+
+
+  
+    <div class="kcrs-layout">
+        <div class="kcrs-wrapper">
+            <h2 class="kcrs-heading">Courses</h2>
+            
+            <div class="kcrs-card">
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Introduction to Web Development</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="kcrs-track-label">65%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+
+
+ <br>
+
+            <div class="kcrs-card">
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Computer Architecture</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 35%"></div>
+                    </div>
+                    <span class="kcrs-track-label">35%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+
+
+<br>
+
+
+            <div class="kcrs-card">
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Cybersecurity</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="kcrs-track-label">75%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+
+
+<br>
+
+              <div class="kcrs-card">
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Data structure and algorithims</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 85%"></div>
+                    </div>
+                    <span class="kcrs-track-label">85%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+
+
+<br>
+
+              <div class="kcrs-card">
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Software Engineering</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 35%"></div>
+                    </div>
+                    <span class="kcrs-track-label">35%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+<br>
+
+
+  <div class="kcrs-card">
+    
+                <div class="kcrs-card-header">
+                    <span class="kcrs-card-title">Advanced Programming</span>
+                </div>
+                
+                <div class="kcrs-track-wrap">
+                    <div class="kcrs-track-bg">
+                        <div class="kcrs-track-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="kcrs-track-label">65%</span>
+                </div>
+                
+                <button class="kcrs-action-btn" onclick="kcrsOpenResources()">See resources</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function kcrsOpenResources() {
+            alert('Resources panel would open here');
+        }
+    </script>
+
+   
+</body>
+</html>
+
+

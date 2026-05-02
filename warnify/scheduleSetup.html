@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Setup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="schedule-body">
+
+    <main class="schedule-wrapper">
+
+        <div class="schedule-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+        </div>
+
+        <h1 class="schedule-title">Set up your schedule</h1>
+        <p class="schedule-subtitle">Choose your class times below to get started.</p>
+
+        <div class="schedule-divider"></div>
+
+        <p class="schedule-section-label">Subjects Timetable</p>
+
+<div class="schedule-field">
+    <form action="setupSchedule.php" method="POST">
+    <label class="schedule-label" for="WebDay">Web Programming</label>
+    <select class="schedule-select" name="WebDay" id="WebDay">
+        <option selected>Choose...</option>
+        <option value="1">Monday 08:30</option> <!-- Morning Slot -->
+        <option value="2">Monday 10:30</option> <!-- Late Morning Slot -->
+    </select>
+</div>
+
+<div class="schedule-field">
+    <label class="schedule-label" for="DSADay">DSA</label>
+    <select class="schedule-select" name="DSADay" id="DSADay">
+        <option selected>Choose...</option>
+        <option value="3">Monday 1:30</option> <!-- Afternoon Slot -->
+        <option value="4">Monday 3:30</option> <!-- Late Afternoon Slot -->
+    </select>
+</div>
+
+<!-- TUESDAY GROUP -->
+<div class="schedule-field">
+    <label class="schedule-label" for="CyberDay">Cybersecurity</label>
+    <select class="schedule-select" name="CyberDay" id="CyberDay">
+        <option selected>Choose...</option>
+        <option value="5">Tuesday 08:30</option>
+        <option value="6">Tuesday 10:30</option>
+    </select>
+</div>
+
+<div class="schedule-field">
+    <label class="schedule-label" for="SoftEngDay">Software Engineering</label>
+    <select class="schedule-select" name="SoftEngDay" id="SoftEngDay">
+        <option selected>Choose...</option>
+        <option value="7">Tuesday 1:30</option>
+        <option value="8">Tuesday 3:30</option>
+    </select>
+</div>
+
+
+<div class="schedule-field">
+    <label class="schedule-label" for="AdvProgDay">Advanced Programming</label>
+    <select class="schedule-select" name="AdvProgDay" id="AdvProgDay">
+        <option selected>Choose...</option>
+        <option value="9">Wednesday 09:00</option>
+        <option value="10"> Wednesday 11:00</option>
+    </select>
+</div>
+
+<div class="schedule-field">
+    <label class="schedule-label" for="CompArchDay">Computer Architecture</label>
+    <select class="schedule-select" name="CompArchDay" id="CompArchDay">
+        <option selected>Choose...</option>
+        <option value="11">Wednesday 02:00</option>
+        <option value="12"> Wednesday 04:00</option>
+    </select>
+</div>
+
+
+
+
+
+        <button class="schedule-btn" type="submit">Save Schedule</button>
+
+
+        </form>
+        <p class="schedule-footer">© 2025 Warnify. All rights reserved.</p>
+
+    </main>
+
+</body>
+</html>

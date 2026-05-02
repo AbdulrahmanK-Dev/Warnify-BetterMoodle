@@ -1,0 +1,766 @@
+.images{
+    height: 200px;
+    width: 200px;
+}
+
+.signup{
+    width: 200px;
+}
+
+
+#SignupMain{
+     max-width: 500px;         /* This makes the container "small" */
+    margin: 40px auto;        /* Centers it horizontally */
+    padding: 30px;            /* Space inside the border */
+    border: 2px solid #ee0505; /* Small, clean outline */
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    color: white;
+}    
+
+
+
+body{
+    margin-top:20px;
+    background:#eee;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+.card-columns .card {
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 3;
+        column-gap: 1.25rem;
+    }
+    .card-columns .card {
+        display: inline-block;
+        width: 100%;
+    }
+}
+.text-muted {
+    color: #9faecb !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9f5;
+}
+
+.container {
+  display: flex;
+  min-height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #c8e6c9;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1.1;
+  background: #2e7d32;
+  color: white;
+  padding: 3rem 2.5rem;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+
+.circle.big {
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: -80px;
+}
+
+.circle.small {
+  width: 200px;
+  height: 200px;
+  bottom: -50px;
+  right: -50px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.left-panel h2 {
+  font-size: 28px;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  color: #a5d6a7;
+  margin-bottom: 2.5rem;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 13px;
+  color: #c8e6c9;
+}
+
+.value {
+  font-size: 17px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 3rem 2.5rem;
+}
+
+.header h3 {
+  color: #1b5e20;
+}
+
+.header p {
+  color: #888;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  font-size: 13px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8e6c9;
+  background: #f9fdf9;
+}
+
+.input-group input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px #c8e6c955;
+  outline: none;
+}
+
+/* Forgot */
+.forgot {
+  text-align: right;
+  color: #2e7d32;
+  font-size: 13px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #388e3c;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 13px;
+  background: white;
+  border: 1.5px solid #2e7d32;
+  color: #2e7d32;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: #f1f8f1;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.divider div {
+  flex: 1;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.divider span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 1.5rem;
+}
+
+
+/* Signup container 
+
+
+
+/* Background */
+.page-bg {
+  min-height: 600px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* Container */
+.signup-container {
+  display: flex;
+  width: 100%;
+  max-width: 860px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  width: 300px;
+  background: #1a4d2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 28px;
+  color: #fff;
+}
+
+.logo-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  background: rgba(255,255,255,0.1);
+}
+
+.left-panel h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.highlight {
+  color: #86efac;
+}
+
+.left-panel p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* Mock cards */
+.mock-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 12px 14px;
+  border: 0.5px solid rgba(255,255,255,0.2);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mock-title {
+  font-size: 12px;
+  color: #fff;
+}
+
+.mock-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+}
+
+.mock-tag {
+  display: inline-block;
+  background: rgba(134,239,172,0.2);
+  color: #86efac;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 2px 8px;
+  margin-top: 5px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #6b7280;
+  border: none;
+  background: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.right-panel h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+label {
+  font-size: 12px;
+  color: #374151;
+}
+
+.form-control,
+.form-select {
+  border: 0.5px solid #d1d5db !important;
+  border-radius: 8px !important;
+  font-size: 13px !important;
+  padding: 9px 12px !important;
+  background: #f9fafb !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #16a34a !important;
+  box-shadow: 0 0 0 3px rgba(22,163,74,0.12) !important;
+  background: #fff !important;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: #16a34a;
+  border-color: #16a34a;
+}
+
+.terms-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Button */
+.btn-signup {
+  background: #16a34a;
+  color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.btn-signup:hover {
+  background: #15803d;
+}
+
+/* Footer */
+.meta-line {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.login-link {
+  color: #16a34a;
+  cursor: pointer;
+}
+
+/* UserHomepage */
+
+#calendar{
+  
+     width: 80%;
+    margin: auto;
+    background-color: #c8d6c3;
+}
+
+
+h1, h2{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.Setup-container {
+  display: flex;
+  width: 100%;
+  max-width: 860px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+    max-width: 500px;
+    font-size: 1.25rem; 
+    text-align: center;
+}
+
+.form-selectSetup {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* 4. Add space between the rows without using <br> */
+.col-12 {
+    margin-bottom: 2rem; 
+}
+
+
+
+
+
+/* ── Warnify Schedule Setup Page ── */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.schedule-body {
+    min-height: 100vh;
+    background-color: #f5f9f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+}
+
+.schedule-wrapper {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #c8e6c9;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 1080px;
+    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
+}
+
+.schedule-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #2e7d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.schedule-icon svg {
+    fill: white;
+}
+
+.schedule-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b5e20;
+    margin-bottom: 4px;
+}
+
+.schedule-subtitle {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-divider {
+    height: 1px;
+    background: #e8f5e9;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-section-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2e7d32;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 1.25rem;
+}
+
+.schedule-field {
+    margin-bottom: 1rem;
+}
+
+.schedule-field:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.schedule-label {
+    font-size: 13px;
+    color: #555;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.schedule-select {
+    width: 100%;
+    background: #f9fdf9;
+    border: 1px solid #c8e6c9;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.schedule-select:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(200, 230, 201, 0.6);
+}
+
+.schedule-btn {
+    width: 100%;
+    background: #2e7d32;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.schedule-btn:hover {
+    background: #388e3c;
+}
+
+.schedule-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 1.5rem;
+}
+/* END OF SCHEDULE*/
+
+/* COURSES SECTION OF HOMEPAGE*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f0fdf4;
+}
+
+.kcrs-layout {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.kcrs-wrapper {
+    width: 100%;
+    max-width: 1080px;
+}
+
+.kcrs-heading {
+    color: #166534;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.kcrs-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #dcfce7;
+}
+
+.kcrs-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.kcrs-card-title {
+    color: #15803d;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.kcrs-track-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.kcrs-track-bg {
+    flex: 1; /*Controls the behaviour of the progress bar*/
+    height: 8px;
+    background: #f0fdf4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.kcrs-track-fill {
+    height: 100%;
+    background: #22c55e;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.kcrs-track-label {
+    color: #16a34a;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-width: 40px;
+    text-align: right;
+}
+
+.kcrs-action-btn {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.kcrs-action-btn:hover {
+    background: #15803d;
+}
+
+.kcrs-action-btn:active {
+    transform: scale(0.98);
+}
