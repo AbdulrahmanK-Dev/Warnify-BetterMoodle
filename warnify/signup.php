@@ -1,0 +1,156 @@
+
+<?php
+
+session_start();
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warnify Signup</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-bg">
+  <div class="signup-container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="logo-circle">📚</div>
+
+      <h2>Stay informed with your <span class="highlight">campus community.</span></h2>
+      <p>Alerts, announcements, and notices from your university  all in one place.</p>
+
+      <div class="mock-card">
+        <div class="mock-title">Library closure notice</div>
+        <div class="mock-sub">Main library closed Dec 24–26</div>
+        <span class="mock-tag">Admin</span>
+      </div>
+
+      <div class="mock-card">
+        <div class="mock-title">Exam schedule updated</div>
+        <div class="mock-sub">CS dept finals moved to Hall B</div>
+        <span class="mock-tag">Academic</span>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+      <button class="back-btn">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back
+      </button>
+
+      <h2>Create your account</h2>
+<form action="signupProcess.php" method="post">
+      <div class="row g-2">
+
+        
+        <div class="col-6">
+          <label>First name</label>
+          <input type="text" class="form-control" placeholder="Abdulrahman" name="fName">
+           <span class="error">  <?php
+           echo $_SESSION['fNameErr'] ?? '';
+           unset($_SESSION['fNameErr']);
+           ?></span>
+        </div>
+
+        <div class="col-6">
+          <label>Last name</label>
+          <input type="text" class="form-control" placeholder="Filipino" name="lName">
+           <span class="error">  <?php
+           echo $_SESSION['lNameErr'] ?? '';
+           unset($_SESSION['lNameErr']);
+           ?></span>
+        </div>
+
+        <div class="col-6">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="aast@edu" name="email">
+           <span class="error">  <?php
+           echo $_SESSION['emailErr'] ?? '';
+           unset($_SESSION['emailErr']);
+           ?></span>
+        </div>
+
+        <div class="col-6">
+          <label>Password</label>
+          <input type="password" class="form-control" placeholder="••••••••" name="password">
+           <span class="error">  <?php
+           echo $_SESSION['passwordErr'] ?? '';
+           unset($_SESSION['passwordErr']);
+           ?></span>
+        </div>
+
+
+
+        <div class="col-12">
+          <label>Major</label>
+          <select class="form-select" name="major">
+             <span class="error">  <?php
+           echo $_SESSION['majorErr'] ?? '';
+           unset($_SESSION['majorErr']);
+           ?></span>
+            <option>Choose...</option>   
+            <option>Computer Science</option>
+            <option>Software Engineering</option>
+            <option>Cybersecurity</option>
+            <option>Artificial Intelligence</option>
+            <option>Information System</option>
+          </select>
+
+        </div>
+
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="terms" name="terms">
+             <span class="error">  <?php
+           echo $_SESSION['termsErr'] ?? '';
+           unset($_SESSION['Err']);
+           ?></span>
+            <label class="form-check-label terms-label" for="terms">
+              I agree to the terms and conditions
+            </label>
+          </div>
+        </div>
+
+
+         <div class="col-12">
+          <button class="btn-signup" type="submit">Sign up</button>
+        </div>
+      </div>
+
+</form>
+
+
+       
+
+      <div class="meta-line">
+        A Warnify product · <span class="login-link">Log in instead</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+

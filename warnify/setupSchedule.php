@@ -19,19 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_POST['CompArchDay']
     );
 
-    // ↓ REPLACE YOUR OLD FOREACH WITH THIS
+ 
     foreach($Subjects as $subj) {
         if(!empty($subj) && $subj != "Choose...") {
             $setupSQL = "INSERT INTO student_schedules(student_id, subject_id) VALUES ($user_id, $subj)";
             if(!mysqli_query($con, $setupSQL)) {
-                echo "FAILED: " . $setupSQL . "<br>";
                 echo "Error: " . mysqli_error($con) . "<br>";
-            } else {
-                echo "SUCCESS: inserted student=$user_id subject=$subj <br>";
-            }
+            } 
         }
     }
-    die(); // ← stop before redirect so you can read output
+
+    header("Location:homepage.php");
+    
 
 }
 ?>
