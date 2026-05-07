@@ -29,6 +29,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
+
+
+
+
+
+ $subjectProg_ID = 1; //Hardcoded for now. We will probably only apply this for one subject to save time.
+ $stmt = $con->prepare("
+    INSERT IGNORE INTO progress (user_id, topic_id, completed, completed_at)
+    SELECT ?, topic_id, 0, NULL
+    FROM topics
+    WHERE subjectProg_ID = ?
+");
+
+ $stmt->bind_param("ii", $user_id, $subjectProg_ID);
+ $stmt->execute();
+ $stmt->close();
+
+
     header("Location:homepage.php");
     
 

@@ -35,20 +35,16 @@
      <?php
       
      session_start();
-
      $name = $_SESSION['fName'] ?? "Guest";
-
      echo    '<h1>Hello! '.$name.   '</h1> ';
      ?>
-        
-     dasd
     </header>
 
 
 
 <div class="kcrs-layout">
     <div class="kcrs-wrapper">
-        <h2 class="kcrs-heading">Coursesdss</h2>
+        <h2 class="kcrs-heading">Courses</h2>
 
         <div class="kcrs-card">
             <div class="kcrs-card-header">
@@ -60,7 +56,7 @@
                 </div>
                 <span class="kcrs-track-label">65%</span>
             </div>
-            <a href=resources\web.html>
+            <a href=web.php>
             <button class="kcrs-action-btn">See resources</button>
             </a>
 
