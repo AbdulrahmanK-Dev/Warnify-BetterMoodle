@@ -1,0 +1,204 @@
+/* ── WARNIFY LOGIN PAGE ── */
+
+body.login-body {
+    margin-top: 20px;
+    background: #eee;
+}
+
+.login-container {
+    display: flex;
+    min-height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #c8e6c9;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    flex: 1.1;
+    background: #2e7d32;
+    color: white;
+    padding: 3rem 2.5rem;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+.circle.big {
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    left: -80px;
+}
+
+.circle.small {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    background: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.left-panel h2 {
+    font-size: 28px;
+    margin-bottom: 0.75rem;
+}
+
+.subtitle {
+    color: #a5d6a7;
+    margin-bottom: 2.5rem;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 14px 18px;
+    border-radius: 12px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.label {
+    font-size: 13px;
+    color: #c8e6c9;
+}
+
+.value {
+    font-size: 17px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    flex: 1;
+    background: white;
+    padding: 3rem 2.5rem;
+}
+
+.header h3 {
+    color: #1b5e20;
+}
+
+.header p {
+    color: #888;
+}
+
+/* Inputs */
+.input-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: 1px solid #c8e6c9;
+    background: #f9fdf9;
+}
+
+.input-group input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px #c8e6c955;
+    outline: none;
+}
+
+/* Forgot */
+.forgot {
+    text-align: right;
+    color: #2e7d32;
+    font-size: 13px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #388e3c;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 13px;
+    background: white;
+    border: 1.5px solid #2e7d32;
+    color: #2e7d32;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #f1f8f1;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.divider div {
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.divider span {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 1.5rem;
+}

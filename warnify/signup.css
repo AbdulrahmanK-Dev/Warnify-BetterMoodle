@@ -1,0 +1,194 @@
+/* ── WARNIFY SIGNUP PAGE ── */
+
+.signup {
+    width: 200px;
+}
+
+#SignupMain {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #ee0505;
+    border-radius: 15px;
+    background-color: #000000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Alternative Signup Layout */
+.page-bg {
+    min-height: 600px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    max-width: 860px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    background: #fff;
+}
+
+/* LEFT PANEL (Signup Variant) */
+.signup-container .left-panel {
+    width: 300px;
+    background: #1a4d2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 28px;
+    color: #fff;
+}
+
+.logo-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    background: rgba(255,255,255,0.1);
+}
+
+.signup-container .left-panel h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #86efac;
+}
+
+.signup-container .left-panel p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* Mock Cards */
+.mock-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 12px 14px;
+    border: 0.5px solid rgba(255,255,255,0.2);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mock-title {
+    font-size: 12px;
+    color: #fff;
+}
+
+.mock-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+}
+
+.mock-tag {
+    display: inline-block;
+    background: rgba(134,239,172,0.2);
+    color: #86efac;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-top: 5px;
+}
+
+/* RIGHT PANEL (Signup Variant) */
+.signup-container .right-panel {
+    flex: 1;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #6b7280;
+    border: none;
+    background: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.right-panel h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Form Controls (Signup Specific) */
+.signup-container label {
+    font-size: 12px;
+    color: #374151;
+}
+
+.form-control,
+.form-select {
+    border: 0.5px solid #d1d5db !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    padding: 9px 12px !important;
+    background: #f9fafb !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #16a34a !important;
+    box-shadow: 0 0 0 3px rgba(22,163,74,0.12) !important;
+    background: #fff !important;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+    background-color: #16a34a;
+    border-color: #16a34a;
+}
+
+.terms-label {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Button */
+.btn-signup {
+    background: #16a34a;
+    color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.btn-signup:hover {
+    background: #15803d;
+}
+
+/* Footer */
+.meta-line {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.login-link {
+    color: #16a34a;
+    cursor: pointer;
+}
