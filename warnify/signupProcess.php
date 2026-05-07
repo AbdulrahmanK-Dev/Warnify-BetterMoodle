@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     
     $email = $_POST['email'] ?? '';
+    $email = trim(strtolower($_POST['email'])); // trim + lowercase for consistency
 
     if (empty($email)) {
         $_SESSION['emailErr'] = "Email cannot be empty";
@@ -46,6 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $hasError = true;
         }
     }
+
+
 
   
     $password = $_POST['password'] ?? '';

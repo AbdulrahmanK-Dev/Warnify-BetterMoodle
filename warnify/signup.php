@@ -43,7 +43,7 @@ session_start();
       </div>
     </div>
 
-    <!-- RIGHT PANEL -->
+    
     <div class="right-panel">
 
       <button class="back-btn">

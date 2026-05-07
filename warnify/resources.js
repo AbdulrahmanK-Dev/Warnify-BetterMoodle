@@ -1,10 +1,6 @@
-// resources.js
 
-// ============================================
-// ADD RESOURCES HERE (for now, until admin panel is ready)
-// ============================================
-// Format: 'topicId': ['resource1', 'resource2', 'https://example.com']
-// Topic IDs: html-intro, html1, html2, css1, css2, php1, php2, php3, php4, js1, js2
+
+
 
 const resources = {
     'html-intro': [
@@ -51,9 +47,7 @@ const resources = {
     ]
 };
 
-// ============================================
-// POPUP LOGIC
-// ============================================
+
 
 let currentTopic = '';
 

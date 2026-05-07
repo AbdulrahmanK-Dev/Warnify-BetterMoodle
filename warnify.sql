@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2026 at 03:58 PM
+-- Generation Time: May 07, 2026 at 09:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -40,17 +40,6 @@ CREATE TABLE `progress` (
 --
 
 INSERT INTO `progress` (`progress_id`, `user_id`, `topic_id`, `completed`, `completed_at`) VALUES
-(16, 44, 1, 0, NULL),
-(17, 44, 2, 0, NULL),
-(18, 44, 3, 0, NULL),
-(19, 44, 4, 0, NULL),
-(20, 44, 5, 0, NULL),
-(21, 44, 6, 0, NULL),
-(22, 44, 7, 0, NULL),
-(23, 44, 8, 0, NULL),
-(24, 44, 9, 0, NULL),
-(25, 44, 10, 0, NULL),
-(26, 44, 11, 0, NULL),
 (27, 45, 1, 1, '2026-05-07 11:59:10'),
 (28, 45, 2, 1, '2026-05-07 11:59:10'),
 (29, 45, 3, 0, NULL),
@@ -62,17 +51,39 @@ INSERT INTO `progress` (`progress_id`, `user_id`, `topic_id`, `completed`, `comp
 (35, 45, 9, 1, '2026-05-07 11:59:10'),
 (36, 45, 10, 1, '2026-05-07 11:59:10'),
 (37, 45, 11, 0, NULL),
-(42, 46, 1, 1, '2026-05-07 16:01:55'),
-(43, 46, 2, 1, '2026-05-07 16:01:55'),
-(44, 46, 3, 0, NULL),
-(45, 46, 4, 0, NULL),
-(46, 46, 5, 0, NULL),
-(47, 46, 6, 0, NULL),
-(48, 46, 7, 0, NULL),
-(49, 46, 8, 0, NULL),
-(50, 46, 9, 0, NULL),
-(51, 46, 10, 0, NULL),
-(52, 46, 11, 0, NULL);
+(57, 47, 1, 1, '2026-05-07 22:01:33'),
+(58, 47, 2, 1, '2026-05-07 22:01:33'),
+(59, 47, 3, 0, NULL),
+(60, 47, 4, 0, NULL),
+(61, 47, 5, 0, NULL),
+(62, 47, 6, 0, NULL),
+(63, 47, 7, 1, '2026-05-07 22:01:33'),
+(64, 47, 8, 0, NULL),
+(65, 47, 9, 0, NULL),
+(66, 47, 10, 0, NULL),
+(67, 47, 11, 0, NULL),
+(72, 49, 1, 1, '2026-05-07 22:03:57'),
+(73, 49, 2, 1, '2026-05-07 22:03:57'),
+(74, 49, 3, 1, '2026-05-07 22:03:57'),
+(75, 49, 4, 0, NULL),
+(76, 49, 5, 0, NULL),
+(77, 49, 6, 0, NULL),
+(78, 49, 7, 0, NULL),
+(79, 49, 8, 0, NULL),
+(80, 49, 9, 1, '2026-05-07 22:03:57'),
+(81, 49, 10, 1, '2026-05-07 22:03:57'),
+(82, 49, 11, 0, NULL),
+(87, 50, 1, 1, '2026-05-07 22:31:08'),
+(88, 50, 2, 1, '2026-05-07 22:31:08'),
+(89, 50, 3, 1, '2026-05-07 22:31:08'),
+(90, 50, 4, 1, '2026-05-07 22:31:08'),
+(91, 50, 5, 1, '2026-05-07 22:31:08'),
+(92, 50, 6, 0, NULL),
+(93, 50, 7, 0, NULL),
+(94, 50, 8, 0, NULL),
+(95, 50, 9, 0, NULL),
+(96, 50, 10, 0, NULL),
+(97, 50, 11, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -147,7 +158,25 @@ INSERT INTO `student_schedules` (`student_id`, `subject_id`) VALUES
 (46, 6),
 (46, 7),
 (46, 10),
-(46, 12);
+(46, 12),
+(47, 1),
+(47, 3),
+(47, 6),
+(47, 7),
+(47, 10),
+(47, 12),
+(49, 2),
+(49, 3),
+(49, 5),
+(49, 8),
+(49, 10),
+(49, 11),
+(50, 2),
+(50, 3),
+(50, 5),
+(50, 7),
+(50, 9),
+(50, 11);
 
 -- --------------------------------------------------------
 
@@ -222,49 +251,21 @@ CREATE TABLE `user` (
   `lName` varchar(256) NOT NULL,
   `email` varchar(256) NOT NULL,
   `password` varchar(256) NOT NULL,
-  `major` varchar(256) NOT NULL
+  `major` varchar(256) NOT NULL,
+  `role` varchar(256) NOT NULL,
+  `is_banned` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`ID`, `fName`, `lName`, `email`, `password`, `major`) VALUES
-(3, 'Marino', 'Remon', 'marinoremon@yahoo.com', 'marinnooo', 'Cybersecurity'),
-(4, 'Mohamed', 'Filipino', 'm.mahmoudg23@gmail.com', 'filipin2123', 'Artificial Intelligence'),
-(6, 'wdwd', 'wada', 'asdasd@as', 'asdasd', 'Computer Science'),
-(10, '', '', '', '', ''),
-(11, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '', 'Software Engineering'),
-(12, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '', 'Computer Science'),
-(13, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '', 'Software Engineering'),
-(17, 'seif', 'bakry', 'seafood@jackson', 'IhaveAthingforcurlyheads', 'Software Engineering'),
-(18, 'tibo', 'libo', 'tibolibo@dibo', 'plsworkbruh', 'Information System'),
-(19, 'WORK', 'NOW', 'work@gmail.com', 'wallahiifitdoesntwork', 'Software Engineering'),
-(20, 'can', 'you', 'work@gmaisads', 'plspwork', 'Software Engineering'),
-(21, 'can', 'bakry', 'seafood@jackson', 'asdasdasd', 'Cybersecurity'),
-(22, 'asdasd', 'asdasd', 'asdasdasd@asd', 'asdasdasd', 'Computer Science'),
-(23, 'can', 'libo', '', 'asdasd', 'Cybersecurity'),
-(24, 'can', 'bakry', 'seafood@jackson', 'sfsdfsdfsdf', 'Computer Science'),
-(25, 'can', 'libo', 'seafood@jackson', 'sdasdasdasd', 'Software Engineering'),
-(26, 'duawygd', 'sauyfdu', '', 'edtaiesd3eydfyk', 'Computer Science'),
-(27, 'duawygd', 'sauyfdu', 'wyugwuw@shd', 'edtaiesd3eydfyk', 'Computer Science'),
-(28, '', '', '', '', ''),
-(29, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', 'asdjaDASDawd', 'Software Engineering'),
-(30, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', 'adADASD', 'Cybersecurity'),
-(31, '', '', '', '', ''),
-(32, '', '', '', '', ''),
-(33, '', '', '', '', ''),
-(34, '', '', '', '', ''),
-(35, '', '', '', '', 'Choose...'),
-(36, '', '', '', '', 'Choose...'),
-(37, '', '', '', '', 'Choose...'),
-(38, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '$2y$10$I19.ci3BIhdb/AvLLeAOKuk3lv1bMY8kfyZ5OirIYivWVDXdO9Y9.', 'Computer Science'),
-(39, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '$2y$10$AqL9qMy2eeDaETVQe3d39.XNJYpQympstKovwHKFLPK6Y0h6Gycl6', 'Cybersecurity'),
-(40, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '$2y$10$mHR6e1TTp3zw5n/D/wm4Mu9XZl6eW0Hz8LzoYM0yw78zj5DVhwzWu', 'Software Engineering'),
-(41, 'Abdulrahman', 'Mahmoud', 'A.Kamel64780@student.aast.edu', '$2y$10$uMo4nZyFIxgQrLS4IrcGrOOiqg.m6gW9hxBcL.LVROFAphjOmcM.i', 'Cybersecurity'),
-(44, 'Abdulrahman', 'Ahmed', 'abdlrahman.ahmed24922@gmail.com', '$2y$10$yTpxt/QxEVtN5Zb57EockO0x98W2zixT1Bvy2m3GdgagFbuJEnHme', 'Cybersecurity'),
-(45, 'Abdulrahman', 'Ahmed', 'abdlrahman.ahmed24922@gmail.com', '$2y$10$VD8/AJYqRbiklUDtuyVUY.I5JiHhcXX5fQy5WEUMQPFs18kJjQI6u', 'Cybersecurity'),
-(46, 'Abdulrahman', 'Ahmed', 'abdlrahman.ahmed24922@gmail.com', '$2y$10$EQKkxDdhXN.ujbmdkFXbiOXukYYxSKor3Xw5C8uGsdDzadcEO.5NO', 'Artificial Intelligence');
+INSERT INTO `user` (`ID`, `fName`, `lName`, `email`, `password`, `major`, `role`, `is_banned`) VALUES
+(45, 'Abdulrahman', 'Ahmed', 'abdlrahman.ahmed24922@gmail.com', '$2y$10$VD8/AJYqRbiklUDtuyVUY.I5JiHhcXX5fQy5WEUMQPFs18kJjQI6u', 'Cybersecurity', '', 0),
+(47, 'Testing', 'Testing', 'abdo.ahmed24922@gmail.com', '$2y$10$tBaJNQmYccIhmttmbCO/v.Dv/LD0InkihKtLewKDnxI0yn5wPqPCW', 'Cybersecurity', '', 0),
+(48, 'Admin', 'User', 'admin@warnify.com', '$2y$10$TnQZ7PZLA/VlgHtLa/c7L.wViMB8OMVNBb.cuxeevPsBSncoHhvQi', 'N/A', 'admin', 0),
+(49, 'Marino', 'Remon', 'marinoremon@gmail.com', '$2y$10$LTiln2TQ.NcuxMhmMgEumu6SBPrzfkjIgaNKW5goDRkY4nsZ6V3v.', 'Artificial Intelligence', '', 0),
+(50, 'mohamed', 'filipino', 'm.mahmoudg23@gmail.com', '$2y$10$wvZg1qL2vcRDBvbgchxRb.USGvxR0KKtV8bd4l6UpFFpizQaQFW1y', 'Artificial Intelligence', '', 0);
 
 --
 -- Indexes for dumped tables
@@ -312,7 +313,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `progress`
 --
 ALTER TABLE `progress`
-  MODIFY `progress_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `progress_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT for table `subjects`
@@ -330,7 +331,7 @@ ALTER TABLE `topics`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- Constraints for dumped tables

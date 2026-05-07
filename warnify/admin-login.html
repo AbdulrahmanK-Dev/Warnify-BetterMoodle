@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warnify Admin Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="left-panel">
+    <div class="circle big"></div>
+    <div class="circle small"></div>
+
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#2e7d32">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+      </svg>
+    </div>
+
+    <h2>Administration<br>Portal.</h2>
+    <p class="subtitle">Manage students, track<br>progress, and oversee<br>platform analytics.</p>
+
+    <div class="stats">
+      <div class="card">
+        <div class="icon"></div>
+        <div>
+          <p class="label">Platform control</p>
+          <p class="value">Full access</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"></div>
+        <div>
+          <p class="label">Security level</p>
+          <p class="value">Restricted</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="right-panel">
+
+    <div class="header">
+      <h3>Admin access</h3>
+      <p>Sign in to manage the platform</p>
+    </div>
+
+    <form action="admin-login.php" method="POST">
+      <div class="input-group">
+        <label>Email address</label>
+        <input type="email" placeholder="admin@warnify.com" name="email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" name="password" required>
+      </div>
+
+      <button class="login-btn" type="submit">Log in as Admin</button>
+
+      <div class="divider">
+        <div></div><span>OR</span><div></div>
+      </div>
+
+      <a href="login.html">
+        <button class="signup-btn" type="button">Student Login</button>
+      </a>
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>

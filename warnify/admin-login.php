@@ -18,25 +18,25 @@ if ($result->num_rows === 1) {
     $user = $result->fetch_assoc();
 
     if ($user['is_banned']) {
-        die("Your account has been banned. Contact support.");
+        die("Your account has been banned.");
     }
 
     if (password_verify($password, $user['password'])) {
+        if ($user['role'] !== 'admin') {
+            die("Access denied. Admin accounts only.");
+        }
+
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['fName']   = $user['fName'];
         $_SESSION['role']    = $user['role'];
 
-        if ($user['role'] === 'admin') {
-            header("Location: admin-dashboard.php");
-        } else {
-            header("Location: homepage.php");
-        }
+        header("Location: admin-dashboard.php");
         exit();
     } else {
         echo "Invalid password.";
     }
 } else {
-    echo "No user found.";
+    echo "No admin found.";
 }
 
 $stmt->close();
