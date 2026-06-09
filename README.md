@@ -1,1 +1,1 @@
-# Warnify-BetterMoodle
+# Warnify-BetterMoodle.
